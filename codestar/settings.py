@@ -30,7 +30,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost', 'aj-django-blog.herokuapp.com', '8000-ajorgensen89-djangoblog-718xik8ldhv.ws-eu98.gitpod.io', '8000-ajorgensen89-djangoblog-s3i5afspt5z.ws-eu98.gitpod.io']
+ALLOWED_HOSTS = ['localhost', 'aj-django-blog.herokuapp.com', '8000-ajorgensen89-djangoblog-718xik8ldhv.ws-eu98.gitpod.io', '8000-ajorgensen89-djangoblog-s3i5afspt5z.ws-eu98.gitpod.io','8000-ajorgensen89-djangoblog-jjsgny3mclp.ws-eu98.gitpod.io']
 
 
 # Application definition
@@ -41,12 +41,22 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.sites',
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
     'django_summernote',
     'blog',
 ]
+
+SITE_ID = 1
+
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
