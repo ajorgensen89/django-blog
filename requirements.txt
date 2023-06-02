@@ -1,9 +1,15 @@
 asgiref==3.7.1
 cloudinary==1.33.0
+cssselect==1.2.0
+d==0.2.2
 dj-database-url==0.5.0
 dj3-cloudinary-storage==0.0.6
 Django==3.2.19
+django-summernote==0.8.20.0
 gunicorn==20.1.0
+lxml==4.9.2
+Markdown==3.4.3
 psycopg2==2.9.6
+pyquery==2.0.0
 pytz==2023.3
 sqlparse==0.4.4
